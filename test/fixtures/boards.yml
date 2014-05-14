@@ -1,0 +1,55 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gender: 1
+  name: MyString
+  price: 9.99
+  img_url: MyString
+  favorite: 1
+  ApproxWeight: MyString
+  RidingStyle: MyString
+  RidingLevel: MyString
+  AvailableWidths: MyString
+  Manufacturedin: MyString
+  Shape: MyString
+  CamberProfile: MyString
+  Stance: MyString
+  OnSnowFeel: MyString
+  Powder: MyString
+  TurnInitiation: MyString
+  Speed: MyString
+  UnevenTerrain: MyString
+  EdgeHold: MyString
+  Flex: MyString
+  Carving: MyString
+  Switch: MyString
+  Jibbing: MyString
+  Pipe: MyString
+  Jumps: MyString
+
+two:
+  gender: 1
+  name: MyString
+  price: 9.99
+  img_url: MyString
+  favorite: 1
+  ApproxWeight: MyString
+  RidingStyle: MyString
+  RidingLevel: MyString
+  AvailableWidths: MyString
+  Manufacturedin: MyString
+  Shape: MyString
+  CamberProfile: MyString
+  Stance: MyString
+  OnSnowFeel: MyString
+  Powder: MyString
+  TurnInitiation: MyString
+  Speed: MyString
+  UnevenTerrain: MyString
+  EdgeHold: MyString
+  Flex: MyString
+  Carving: MyString
+  Switch: MyString
+  Jibbing: MyString
+  Pipe: MyString
+  Jumps: MyString

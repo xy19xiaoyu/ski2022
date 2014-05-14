@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="/css/jquery.coolfieldset.css">
+<%= render "top" %>
+<div id="wrap" class="container" role="document" style="width: 100% !important">
+<div id="content" class="row">
+<div id="main" class="" role="main">
+<br>
+<h1 id="title" style="margin-top: 0px; margin-bottom: 0px; font-size: 24px; line-height: 36px;
+        font-weight: bold;"> Men's Snowboards</h1>
+<%= render "left"%>
+<div id="colright" style="margin: 0px 0px 0px 235px;">
+  <div id="applications" class="image-grid" style="display: block;">
+    <div class="board-reviews animate" data-id="3084">
+      <a href="http://thegoodride.com/snowboard-reviews/apo-supreme-review-and-buying-advice">
+        <div style="position: relative; width:160px;">
+          <div class="price">
+            <h5>
+              $499</h5>
+          </div>
+          <img class="productthumb" src="http://thegoodride.com/assets/lg-gallery/apo/snowboards/supreme/slides/apo-supreme.jpg"
+               alt="APO Supreme"></div>
+        <h4 style="text-align: center;">
+          APO Supreme</h4>
+      </a>
+    </div>
+
+    <% @boards.each do |board| %>
+        <div class="board-reviews animate" data-id="<%=board.id %>">
+          <a href="http://thegoodride.com/snowboard-reviews/apo-supreme-review-and-buying-advice">
+            <div style="position: relative; ">
+              <%=raw SkiHelper.isfavorite(board.favorite) %>
+              <div class="price">
+                <h5>$<%= board.price %></h5>
+              </div>
+              <img class="productthumb" src="<%= board.img_url %>" alt="<%= board.name %>"></div>
+            <h4 style="text-align:center;"><%= board.name %></h4>
+          </a>
+        </div>
+    <% end %>
+
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+

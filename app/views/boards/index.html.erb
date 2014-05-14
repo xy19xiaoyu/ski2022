@@ -1,0 +1,23 @@
+
+<%= render "top" %>
+<div class="container" style="padding-top: 10px">
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th class="col-sm-9" >名称</th>
+      <th  class="col-sm-1 text-center" >单价</th>
+      <th  class="col-sm-2 text-center">编辑</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @boards.each do |board| %>
+      <tr>
+        <td class="col-sm-9"><%= board.name %></td>
+        <td class="col-sm-1 text-center">$<%= board.price %></td>
+        <td class="col-sm-2 text-center"><%= link_to '查看', board %>&nbsp;<%= link_to '编辑', edit_board_path(board) %>&nbsp;<%= link_to '删除', board, method: :delete, data: { confirm: '你确定删除吗？' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to '新建', new_board_path %>
+</div>

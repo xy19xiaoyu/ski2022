@@ -1,0 +1,284 @@
+<%= render "top" %>
+<div id="wrap" class="container" role="document" >
+  <div id="content" class="row">
+     <div id="main" class="span24" role="main">
+       <article class="post-3084 snowboardreviews type-snowboardreviews status-publish hentry" id="post-3084">
+          <header>
+            <div class="page-header">
+             <h1 class="entry-title"><%= @board.name %> Review And Buying Advice</h1>
+            </div>
+          </header>
+          <div class="row">
+  <div class="span20">
+  <div class="row" style="margin-bottom: 5px;">
+    <div class="span6">
+      <div class="module" style="text-align:center;">
+        <div id="tweets" style="border-radius:3px 3px 0 0; border: 1px solid #ddd;">
+          <div class="tweet" style="clear:both;">
+            <p style="font-size: 16px;"><strong>Price US $<%= @board.price %></strong></p>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+        <div class="inner" style="position: relative;line-height: 0;  border-radius: 0 0 3px 3px; border-top: none;">
+          <%=raw SkiHelper.isfavorite(@board.favorite) %>
+          <a href="<%= @board.img_url %>" rel="lightbox"><img src="<%= @board.img_url %>" alt="<%= @board.name %>Review And Buying Advice" style="max-height:350px;"/></a>						</div>
+        <script type='text/javascript'>
+            /* <![CDATA[ */
+            var JQLBSettings = {"showInfo":"1","fitToScreen":"0","resizeSpeed":"400","displayDownloadLink":"0","navbarOnTop":"0","resizeCenter":"","marginSize":"0","linkTarget":"_self","slideshowSpeed":"4000","help":"","prevLinkTitle":"previous image","nextLinkTitle":"next image","closeTitle":"close image gallery","image":"Image ","of":" of ","download":"Download","pause":"(pause slideshow)","play":"(play slideshow)"};
+            /* ]]> */
+        </script>
+      </div>
+    </div>
+    <div class="span14">
+<div class="row">
+  <div class="span7">
+    <!--<h2>Specs</h2>-->
+
+    <div class="module">
+      <div class="inner">
+        <!--<h2 class="twitter">Specs</h2>-->
+        <div id="tweets">
+          <div class="tweet" style="clear:both;">
+            <p style="float:left"><strong>Approx. Weight</strong></p>
+            <p style="float:right"><%= @board.ApproxWeight %></p>
+          </div>
+          <div style="clear:both;"></div>
+          <div class="tweet" style="clear:both;">
+            <p style="float:left"><strong>Riding Style</strong></p>
+            <p style="float:right"><%= @board.RidingStyle %></p>
+          </div>
+          <div style="clear:both;"></div>
+          <div class="tweet" style="clear:both;">
+            <p style="float:left"><strong>Riding Level</strong></p>
+            <p style="float:right"><%= @board.RidingLevel %></p>
+          </div>
+          <div style="clear:both;"></div>
+          <div class="tweet" style="clear:both;">
+            <p style="float:left"><strong>Available Widths</strong></p>
+            <p style="float:right"><%= @board.AvailableWidths %></p>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+      </div>
+    </div><!-- /.module -->
+  </div>
+  <div class="span7">
+    <!--<h2>Specs</h2>-->
+    <div class="module">
+      <div class="inner">
+        <!--<h2 class="twitter">Specs</h2>-->
+        <div id="tweets">
+          <div class="tweet" style="clear:both;">
+            <p style="float:left"><strong>Manufactured in</strong></p>
+            <p style="float:right"><%= @board.Manufacturedin %></p>
+          </div>
+          <div style="clear:both;"></div>
+          <div class="tweet" style="clear:both;">
+            <p style="float:left"><strong>Shape</strong></p>
+            <p style="float:right"><%= @board.Shape %></p>
+          </div>
+          <div style="clear:both;"></div>
+          <div class="tweet" style="clear:both;">
+            <p style="float:left"><strong>Camber Profile</strong></p>
+            <p style="float:right"><%= @board.CamberProfile %></p>
+          </div>
+          <div style="clear:both;"></div>
+          <div class="tweet" style="clear:both;">
+            <p style="float:left"><strong>Stance</strong></p>
+            <p style="float:right"><%= @board.Stance %></p>
+          </div>
+          <div style="clear:both;"></div>
+        </div>
+      </div>
+    </div><!-- /.module -->
+  </div>
+</div>
+<div class="row" style="margin-bottom: 2px;">
+  <div class="span14">
+    <!--<h2>How It Rides</h2>-->
+
+    <div class="row">
+      <div class="span7">
+        <div class="module">
+          <div class="inner">
+            <div id="tweets">
+              <div class="tweet" style="clear:both;">
+                <div style="float:left">
+                  <p><strong>On Snow Feel</strong></p>
+                  <p><%= @board.OnSnowFeel %></p>
+                </div>
+                <div class="flakes" style="float:right; padding-top:5px">
+                  <%= raw BoardsHelper.getReviewsValues @board.OnSnowFeel %>
+                </div>
+              </div>
+              <div style="clear:both;"></div>
+              <div class="tweet" style="clear:both;">
+                <div style="float:left">
+                  <p><strong>Powder</strong></p>
+                  <p><%= @board.Powder %></p>
+                </div>
+                <div class="flakes" style="float:right; padding-top:5px">
+                  <%= raw BoardsHelper.getReviewsValues @board.Powder %>
+                </div>
+              </div>
+              <div style="clear:both;"></div>
+              <div class="tweet" style="clear:both;">
+                <div style="float:left">
+                  <p><strong>Turn Initiation</strong></p>
+                  <p><%= @board.TurnInitiation %></p>
+                </div>
+                <div class="flakes" style="float:right; padding-top:5px">
+                  <%= raw BoardsHelper.getReviewsValues @board.TurnInitiation %>
+                </div>
+              </div>
+              <div style="clear:both;"></div>
+              <div class="tweet" style="clear:both;">
+                <div style="float:left">
+                  <p><strong>Speed</strong></p>
+                  <p><%= @board.Speed %></p>
+                </div>
+                <div class="flakes" style="float:right; padding-top:5px">
+                  <%= raw BoardsHelper.getReviewsValues @board.Speed %>
+                </div>
+              </div>
+              <div style="clear:both;"></div>
+              <div class="tweet" style="clear:both;">
+                <div style="float:left">
+                  <p><strong>Uneven Terrain</strong></p>
+                  <p><%= @board.UnevenTerrain %></p>
+                </div>
+                <div class="flakes" style="float:right; padding-top:5px">
+                  <%= raw BoardsHelper.getReviewsValues @board.UnevenTerrain %>
+                </div>
+              </div>
+              <div style="clear:both;"></div>
+              <div class="tweet" style="clear:both;">
+                <div style="float:left">
+                  <p><strong>Edge Hold</strong></p>
+                  <p><%= @board.EdgeHold %></p>
+                </div>
+                <div class="flakes" style="float:right; padding-top:5px">
+                  <%= raw BoardsHelper.getReviewsValues @board.EdgeHold %>
+                </div>
+              </div>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div><!-- /.module -->
+      </div>
+      <div class="span7">
+        <div class="module">
+          <div class="inner">
+            <div id="tweets">
+              <div class="tweet" style="clear:both;">
+                <div style="float:left">
+                  <p><strong>Flex</strong></p>
+                  <p><%= @board.Flex %></p>
+                </div>
+                <div class="flakes" style="float:right; padding-top:5px">
+                  <%= raw BoardsHelper.getReviewsValues @board.Flex %>
+                </div>
+              </div>
+              <div style="clear:both;"></div>
+              <div class="tweet" style="clear:both;">
+                <div style="float:left">
+                  <p><strong>Carving</strong></p>
+                  <p><%= @board.Carving %></p>
+                </div>
+                <div class="flakes" style="float:right; padding-top:5px">
+                  <%= raw BoardsHelper.getReviewsValues @board.Carving %>
+                </div>
+              </div>
+              <div style="clear:both;"></div>
+              <div class="tweet" style="clear:both;">
+                <div style="float:left">
+                  <p><strong>Switch</strong></p>
+                  <p><%= @board.Switch %></p>
+                </div>
+                <div class="flakes" style="float:right; padding-top:5px">
+                  <%= raw BoardsHelper.getReviewsValues @board.Switch %>
+                </div>
+              </div>
+              <div style="clear:both;"></div>
+              <div class="tweet" style="clear:both;">
+                <div style="float:left">
+                  <p><strong>Jibbing</strong></p>
+                  <p><%= @board.Jibbing %></p>
+                </div>
+                <div class="flakes" style="float:right; padding-top:5px">
+                  <%= raw BoardsHelper.getReviewsValues @board.Jibbing %>
+                </div>
+              </div>
+              <div style="clear:both;"></div>
+              <div class="tweet" style="clear:both;">
+                <div style="float:left">
+                  <p><strong>Pipe</strong></p>
+                  <p><%= @board.Pipe %></p>
+                </div>
+                <div class="flakes" style="float:right; padding-top:5px">
+                  <%= raw BoardsHelper.getReviewsValues @board.Pipe %>
+                </div>
+              </div>
+              <div style="clear:both;"></div>
+              <div class="tweet" style="clear:both;">
+                <div style="float:left">
+                  <p><strong>Jumps</strong></p>
+                  <p><%= @board.Jumps %></p>
+                </div>
+                <div class="flakes" style="float:right; padding-top:5px">
+                  <%= raw BoardsHelper.getReviewsValues @board.Jumps %>
+                </div>
+              </div>
+              <div style="clear:both;"></div>
+            </div>
+          </div>
+        </div><!-- /.module -->
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+  <div class="span4">
+  <div class="row">
+    <div class="span4">
+      <div class="thumbnail" style="">
+        <div style="max-width:160px; margin-top:8px; margin-bottom:8px; margin-left: auto; margin-right: auto;">
+          广告位
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span4">
+      <div class="thumbnail" style="">
+        <div style="max-width:160px; margin-top:8px; margin-bottom:8px; margin-left: auto; margin-right: auto;">
+          广告位
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span4">
+      <div class="thumbnail" style="">
+        <div class="imagesrotator" style="max-width:160px; margin-top:8px; margin-bottom:8px; margin-left: auto; margin-right: auto;">
+          广告位
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+       </article>
+   </div>
+   <aside id="sidebar" class="" role="complementary">
+   </aside>
+</div>
+  <!-- /#content -->
+<%= link_to '编辑', [:edit, @board] %> |
+<%= link_to '返回', boards_path %>
+
+</div>

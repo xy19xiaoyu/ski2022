@@ -1,0 +1,568 @@
+<div id="colleft">
+<form id="controls">
+<div id="panel">
+<fieldset id="general-set" class="coolfieldset">
+  <h4 class="legend">
+    Favorites</h4>
+  <div class="hideable" id="width">
+    <label class="label_check" for="Favorites">
+      <input name="favorites" type="checkbox" id="Favorites" value="1">Favorites
+    </label>
+    <label class="label_check" for="ValFavorites">
+      <input name="valfavorites" type="checkbox" id="ValFavorites" value="1">Low Cost
+      Favorites
+    </label>
+  </div>
+</fieldset>
+<fieldset id="discontinued-set" class="coolfieldset">
+  <h4 class="legend">
+    Discontinued or Old Reviews</h4>
+  <div class="hideable" id="width">
+    <label class="label_check" for="discontinued">
+      <input name="discontinued" type="checkbox" id="discontinued" value="1">Discontinued
+      or Old Reviews
+    </label>
+  </div>
+</fieldset>
+<fieldset id="sort-set" class="coolfieldset">
+  <h4 class="legend">
+    Sort</h4>
+  <div class="hideable" id="width" style="width: 145px; clear: none;">
+    <div style="float: left; clear: none; display: block; padding: 2px 1em 0 0;">
+      <label class="label_radio r_on" for="a-z">
+        <input name="sort" type="radio" id="a-z" value="0" checked="checked">A - Z
+      </label>
+    </div>
+    <div style="float: right; clear: none; margin: 2px 0 0 2px;">
+      <label class="label_radio" for="z-a">
+        <input name="sort" type="radio" id="z-a" value="1">Z - A
+      </label>
+    </div>
+    <div style="float: left; clear: none; display: block; padding: 2px 1em 0 0;">
+      <label class="label_radio" for="$-$$$">
+        <input name="sort" type="radio" id="$-$$$" value="2">$ - $$$
+      </label>
+    </div>
+    <div style="float: right; clear: none; margin: 2px 0 0 2px;">
+      <label class="label_radio" for="$$$-$">
+        <input name="sort" type="radio" id="$$$-$" value="3">$$$ - $
+      </label>
+    </div>
+  </div>
+</fieldset>
+<fieldset id="brand-set" class="coolfieldset collapsed">
+  <h4 class="legend">
+    Brand</h4>
+  <div class="hideable" id="width" >
+    <label class="label_check" for="apo">
+      <input name="apo" type="checkbox" id="apo" value="1">APO</label><label class="label_check"
+                                                                             for="arbor"><input name="arbor" type="checkbox" id="arbor" value="1">Arbor</label><label
+  class="label_check" for="artec"><input name="artec" type="checkbox" id="artec" value="1">Artec</label><label
+  class="label_check" for="bataleon"><input name="bataleon" type="checkbox" id="bataleon"
+                                            value="1">Bataleon</label><label class="label_check" for="burton"><input name="burton"
+                                                                                                                     type="checkbox" id="burton" value="1">Burton</label><label class="label_check" for="capita"><input
+  name="capita" type="checkbox" id="capita" value="1">Capita</label><label class="label_check"
+                                                                           for="dc"><input name="dc" type="checkbox" id="dc" value="1">DC</label><label class="label_check"
+                                                                                                                                                        for="endeavor"><input name="endeavor" type="checkbox" id="endeavor" value="1">Endeavor</label><label
+  class="label_check" for="flow"><input name="flow" type="checkbox" id="flow" value="1">Flow</label><label
+  class="label_check" for="forum"><input name="forum" type="checkbox" id="forum" value="1">Forum</label><label
+  class="label_check" for="furberg"><input name="furberg" type="checkbox" id="furberg"
+                                           value="1">Furberg</label><label class="label_check" for="gnu_"><input name="gnu_"
+                                                                                                                 type="checkbox" id="gnu_" value="1">Gnu
+  </label>
+    <label class="label_check" for="jones_">
+      <input name="jones_" type="checkbox" id="jones_" value="1">Jones
+    </label>
+    <label class="label_check" for="k2">
+      <input name="k2" type="checkbox" id="k2" value="1">k2</label><label class="label_check"
+                                                                          for="lib_tech"><input name="lib_tech" type="checkbox" id="lib_tech" value="1">Lib
+    Tech</label><label class="label_check" for="never_summer_"><input name="never_summer_"
+                                                                      type="checkbox" id="never_summer_" value="1">Never Summer
+  </label>
+    <label class="label_check" for="nidecker">
+      <input name="nidecker" type="checkbox" id="nidecker" value="1">Nidecker</label><label
+  class="label_check" for="nitro"><input name="nitro" type="checkbox" id="nitro" value="1">Nitro</label><label
+  class="label_check" for="palmer"><input name="palmer" type="checkbox" id="palmer"
+                                          value="1">Palmer</label><label class="label_check" for="pathron"><input name="pathron"
+                                                                                                                  type="checkbox" id="pathron" value="1">Pathron</label><label class="label_check"
+                                                                                                                                                                               for="ride"><input name="ride" type="checkbox" id="ride" value="1">Ride</label><label
+  class="label_check" for="rome"><input name="rome" type="checkbox" id="rome" value="1">Rome</label><label
+  class="label_check" for="rossignol"><input name="rossignol" type="checkbox" id="rossignol"
+                                             value="1">Rossignol</label><label class="label_check" for="roxy"><input name="roxy"
+                                                                                                                     type="checkbox" id="roxy" value="1">Roxy</label><label class="label_check" for="salomon"><input
+  name="salomon" type="checkbox" id="salomon" value="1">Salomon</label><label class="label_check"
+                                                                              for="signal_"><input name="signal_" type="checkbox" id="signal_" value="1">Signal
+  </label>
+    <label class="label_check" for="slash">
+      <input name="slash" type="checkbox" id="slash" value="1">Slash</label><label class="label_check"
+                                                                                   for="smokin"><input name="smokin" type="checkbox" id="smokin" value="1">Smokin</label><label
+  class="label_check" for="stepchild"><input name="stepchild" type="checkbox" id="stepchild"
+                                             value="1">Stepchild</label><label class="label_check" for="technine"><input name="technine"
+                                                                                                                         type="checkbox" id="technine" value="1">Technine</label><label class="label_check"
+                                                                                                                                                                                        for="thrive"><input name="thrive" type="checkbox" id="thrive" value="1">Thrive</label><label
+  class="label_check" for="unity"><input name="unity" type="checkbox" id="unity" value="1">Unity</label><label
+  class="label_check" for="venture"><input name="venture" type="checkbox" id="venture"
+                                           value="1">Venture</label><label class="label_check" for="yes"><input name="yes" type="checkbox"
+                                                                                                                id="yes" value="1">YES</label>
+  </div>
+  <!--<div id="showAll" class="hideable more">More Brands</div>-->
+</fieldset>
+<fieldset id="ride-set" class="coolfieldset">
+  <h4 class="legend">
+    Riding Style</h4>
+  <div class="hideable" id="width">
+    <label class="label_check" for="Powder">
+      <input name="powder" type="checkbox" id="Powder" value="1">Powder
+    </label>
+    <label class="label_check" for="Freeride">
+      <input name="freeride" type="checkbox" id="Freeride" value="1">Freeride
+    </label>
+    <label class="label_check" for="AggressiveAllMountain">
+      <input name="aggressiveallmountain" type="checkbox" id="AggressiveAllMountain" value="1">Aggressive
+      All Mtn
+    </label>
+    <label class="label_check" for="AllMountain">
+      <input name="allmountain" type="checkbox" id="AllMountain" value="1">All Mtn
+    </label>
+    <label class="label_check" for="AggressiveAllMountainFreestyle">
+      <input name="aggressiveallmountainfreestyle" type="checkbox" id="AggressiveAllMountainFreestyle"
+             value="1">Aggressive All Mtn Freestyle
+    </label>
+    <label class="label_check" for="AllMountainFreestyle">
+      <input name="allmountainfreestyle" type="checkbox" id="AllMountainFreestyle" value="1">All
+      Mtn Freestyle
+    </label>
+    <label class="label_check" for="Freestyle">
+      <input name="freestyle" type="checkbox" id="Freestyle" value="1">Freestyle
+    </label>
+    <label class="label_check" for="JibStreet">
+      <input name="jibstreet" type="checkbox" id="JibStreet" value="1">Jib / Street
+    </label>
+  </div>
+</fieldset>
+<fieldset id="split-set" class="coolfieldset">
+  <h4 class="legend">
+    Split boards</h4>
+  <div class="hideable" id="width">
+    <label class="label_check" for="split-yes">
+      <input name="split-yes" type="checkbox" id="split-yes" value="1">Comes in split
+    </label>
+    <!--<label class="label_check" for="split-no">
+<input name="split-no" type="checkbox" id="split-no" value="1"  />No
+</label>-->
+  </div>
+</fieldset>
+<fieldset id="level-set" class="coolfieldset">
+  <h4 class="legend">
+    Ability Level</h4>
+  <div class="hideable" id="width">
+    <label class="label_check" for="Beginner">
+      <input name="beginner" type="checkbox" id="Beginner" value="1">Beginner
+    </label>
+    <label class="label_check" for="Intermediate">
+      <input name="intermediate" type="checkbox" id="Intermediate" value="1">Intermediate
+    </label>
+    <label class="label_check" for="Advanced">
+      <input name="advanced" type="checkbox" id="Advanced" value="1">Advanced
+    </label>
+    <label class="label_check" for="Expert">
+      <input name="expert" type="checkbox" id="Expert" value="1">Expert
+    </label>
+  </div>
+</fieldset>
+<fieldset id="width-set" class="coolfieldset">
+  <h4 class="legend">
+    Board Width</h4>
+  <div class="hideable" id="width">
+    <label class="label_check" for="Regular">
+      <input name="width_regular" type="checkbox" id="Regular" value="1">Regular
+    </label>
+    <label class="label_check" for="Mid">
+      <input name="width_mid" type="checkbox" id="Mid" value="1">Mid/Wide
+    </label>
+    <label class="label_check" for="Wide">
+      <input name="width_wide" type="checkbox" id="Wide" value="1">Wide
+    </label>
+  </div>
+</fieldset>
+<fieldset id="edgehold-set" class="coolfieldset collapsed">
+  <h4 class="legend">
+    Edge Hold</h4>
+  <div class="hideable" id="width" >
+    <label class="label_check" for="edgehold_icy_to_medium">
+      <input name="edgehold_icy_to_medium" type="checkbox" id="edgehold_icy_to_medium"
+             value="1">Icy to Medium
+    </label>
+    <label class="label_check" for="edgehold_hard_to_soft">
+      <input name="edgehold_hard_to_soft" type="checkbox" id="edgehold_hard_to_soft" value="1">Hard
+      to Soft
+    </label>
+    <label class="label_check" for="edgehold_medium_to_soft">
+      <input name="edgehold_medium_to_soft" type="checkbox" id="edgehold_medium_to_soft"
+             value="1">Medium to Soft
+    </label>
+    <label class="label_check" for="edgehold_mostly_soft">
+      <input name="edgehold_mostly_soft" type="checkbox" id="edgehold_mostly_soft" value="1">Mostly
+      Soft
+    </label>
+    <label class="label_check" for="edgehold_soft_only">
+      <input name="edgehold_soft_only" type="checkbox" id="edgehold_soft_only" value="1">Soft
+      Only
+    </label>
+  </div>
+</fieldset>
+<fieldset id="stance-set" class="coolfieldset collapsed">
+  <h4 class="legend">
+    Stance</h4>
+  <div class="hideable" id="width" >
+    <label class="label_check" for="set_back">
+      <input name="set_back" type="checkbox" id="set_back" value="1">Set Back
+    </label>
+    <label class="label_check" for="centered">
+      <input name="centered" type="checkbox" id="centered" value="1">Centered
+    </label>
+  </div>
+</fieldset>
+<fieldset id="shape-set" class="coolfieldset collapsed">
+  <h4 class="legend">
+    Shape</h4>
+  <div class="hideable" id="width" >
+    <label class="label_check" for="tapered_directional">
+      <input name="tapered_directional" type="checkbox" id="tapered_directional" value="1">Tapered
+      Directional
+    </label>
+    <label class="label_check" for="directional">
+      <input name="directional" type="checkbox" id="directional" value="1">Directional
+    </label>
+    <label class="label_check" for="twinish">
+      <input name="twinish" type="checkbox" id="twinish" value="1">Twinish
+    </label>
+    <label class="label_check" for="directional_twin">
+      <input name="directional_twin" type="checkbox" id="directional_twin" value="1">Directional
+      Twin
+    </label>
+    <label class="label_check" for="true_twin">
+      <input name="true_twin" type="checkbox" id="true_twin" value="1">True Twin
+    </label>
+    <label class="label_check" for="asym_twins">
+      <input name="asym_twins" type="checkbox" id="asym_twins" value="1">Asymmetrical
+      Twins
+    </label>
+  </div>
+</fieldset>
+<fieldset id="camber-set" class="coolfieldset collapsed">
+  <h4 class="legend">
+    Camber</h4>
+  <div class="hideable" id="width" >
+    <label class="label_check" for="traditional_camber">
+      <input name="traditional_camber" type="checkbox" id="traditional_camber" value="1">Traditional
+      Camber
+    </label>
+    <label class="label_check" for="hybrid_camber">
+      <input name="hybrid_camber" type="checkbox" id="hybrid_camber" value="1">Hybrid
+      Camber
+    </label>
+    <label class="label_check" for="flat">
+      <input name="flat" type="checkbox" id="flat" value="1">Flat
+    </label>
+    <label class="label_check" for="flat_2_rocker">
+      <input name="flat_2_rocker" type="checkbox" id="flat_2_rocker" value="1">Flat to
+      Rocker
+    </label>
+    <label class="label_check" for="hybrid_rocker">
+      <input name="hybrid_rocker" type="checkbox" id="hybrid_rocker" value="1">Hybrid
+      Rocker
+    </label>
+    <label class="label_check" for="continuous_rocker">
+      <input name="continuous_rocker" type="checkbox" id="continuous_rocker" value="1">Continuous
+      Rocker
+    </label>
+  </div>
+</fieldset>
+<fieldset id="onsnowfeel-set" class="coolfieldset collapsed">
+  <h4 class="legend">
+    On Snow Feel</h4>
+  <div class="hideable" id="width" >
+    <label class="label_check" for="onsnowfeel_locked_in">
+      <input name="onsnowfeel_locked_in" type="checkbox" id="onsnowfeel_locked_in" value="1">Locked
+      In
+    </label>
+    <label class="label_check" for="onsnowfeel_semi_catchy">
+      <input name="onsnowfeel_semi_catchy" type="checkbox" id="onsnowfeel_semi_catchy"
+             value="1">Semi-Catchy
+    </label>
+    <label class="label_check" for="onsnowfeel_stable">
+      <input name="onsnowfeel_stable" type="checkbox" id="onsnowfeel_stable" value="1">Stable
+    </label>
+    <label class="label_check" for="onsnowfeel_semi_stable">
+      <input name="onsnowfeel_semi_stable" type="checkbox" id="onsnowfeel_semi_stable"
+             value="1">Semi-Stable
+    </label>
+    <label class="label_check" for="onsnowfeel_loose">
+      <input name="onsnowfeel_loose" type="checkbox" id="onsnowfeel_loose" value="1">Loose
+    </label>
+  </div>
+</fieldset>
+<fieldset id="powder-set" class="coolfieldset collapsed">
+  <h4 class="legend">
+    Powder</h4>
+  <div class="hideable" id="width" >
+    <label class="label_check" for="powder_excellent">
+      <input name="powder_excellent" type="checkbox" id="powder_excellent" value="1">Excellent
+    </label>
+    <label class="label_check" for="powder_great">
+      <input name="powder_great" type="checkbox" id="powder_great" value="1">Great
+    </label>
+    <label class="label_check" for="powder_good">
+      <input name="powder_good" type="checkbox" id="powder_good" value="1">Good
+    </label>
+    <label class="label_check" for="powder_average">
+      <input name="powder_average" type="checkbox" id="powder_average" value="1">Average
+    </label>
+    <label class="label_check" for="powder_poor">
+      <input name="powder_poor" type="checkbox" id="powder_poor" value="1">Poor
+    </label>
+  </div>
+</fieldset>
+<fieldset id="turninitiation-set" class="coolfieldset collapsed">
+  <h4 class="legend">
+    Turn Initiation</h4>
+  <div class="hideable" id="width" >
+    <label class="label_check" for="turninitiation_very_easy">
+      <input name="turninitiation_very_easy" type="checkbox" id="turninitiation_very_easy"
+             value="1">Very Easy
+    </label>
+    <label class="label_check" for="turninitiation_easy">
+      <input name="turninitiation_easy" type="checkbox" id="turninitiation_easy" value="1">Easy
+    </label>
+    <label class="label_check" for="turninitiation_moderate">
+      <input name="turninitiation_moderate" type="checkbox" id="turninitiation_moderate"
+             value="1">Moderate
+    </label>
+    <label class="label_check" for="turninitiation_semi_challenging">
+      <input name="turninitiation_semi_challenging" type="checkbox" id="turninitiation_semi_challenging"
+             value="1">Semi-Challenging
+    </label>
+    <label class="label_check" for="turninitiation_challenging">
+      <input name="turninitiation_challenging" type="checkbox" id="turninitiation_challenging"
+             value="1">Challenging
+    </label>
+  </div>
+</fieldset>
+<fieldset id="speed-set" class="coolfieldset collapsed">
+  <h4 class="legend">
+    Speed</h4>
+  <div class="hideable" id="width" >
+    <label class="label_check" for="speed_excellent">
+      <input name="speed_excellent" type="checkbox" id="speed_excellent" value="1">Excellent
+    </label>
+    <label class="label_check" for="speed_great">
+      <input name="speed_great" type="checkbox" id="speed_great" value="1">Great
+    </label>
+    <label class="label_check" for="speed_good">
+      <input name="speed_good" type="checkbox" id="speed_good" value="1">Good
+    </label>
+    <label class="label_check" for="speed_average">
+      <input name="speed_average" type="checkbox" id="speed_average" value="1">Average
+    </label>
+    <label class="label_check" for="speed_poor">
+      <input name="speed_poor" type="checkbox" id="speed_poor" value="1">Poor
+    </label>
+  </div>
+</fieldset>
+<fieldset id="uneventerrain-set" class="coolfieldset collapsed">
+  <h4 class="legend">
+    Uneven Terrain</h4>
+  <div class="hideable" id="width" >
+    <label class="label_check" for="uneventerrain_excellent">
+      <input name="uneventerrain_excellent" type="checkbox" id="uneventerrain_excellent"
+             value="1">Excellent
+    </label>
+    <label class="label_check" for="uneventerrain_great">
+      <input name="uneventerrain_great" type="checkbox" id="uneventerrain_great" value="1">Great
+    </label>
+    <label class="label_check" for="uneventerrain_good">
+      <input name="uneventerrain_good" type="checkbox" id="uneventerrain_good" value="1">Good
+    </label>
+    <label class="label_check" for="uneventerrain_average">
+      <input name="uneventerrain_average" type="checkbox" id="uneventerrain_average" value="1">Average
+    </label>
+    <label class="label_check" for="uneventerrain_poor">
+      <input name="uneventerrain_poor" type="checkbox" id="uneventerrain_poor" value="1">Poor
+    </label>
+  </div>
+</fieldset>
+<fieldset id="flex-set" class="coolfieldset collapsed">
+  <h4 class="legend">
+    Flex</h4>
+  <div class="hideable" id="width" >
+    <label class="label_check" for="flex_stiff">
+      <input name="flex_stiff" type="checkbox" id="flex_stiff" value="1">Stiff
+    </label>
+    <label class="label_check" for="flex_medium_stiff">
+      <input name="flex_medium_stiff" type="checkbox" id="flex_medium_stiff" value="1">Medium/Stiff
+    </label>
+    <label class="label_check" for="flex_medium">
+      <input name="flex_medium" type="checkbox" id="flex_medium" value="1">Medium
+    </label>
+    <label class="label_check" for="flex_medium_soft">
+      <input name="flex_medium_soft" type="checkbox" id="flex_medium_soft" value="1">Medium/Soft
+    </label>
+    <label class="label_check" for="flex_soft">
+      <input name="flex_soft" type="checkbox" id="flex_soft" value="1">Soft
+    </label>
+  </div>
+</fieldset>
+<fieldset id="carving-set" class="coolfieldset collapsed">
+  <h4 class="legend">
+    Carving</h4>
+  <div class="hideable" id="width" >
+    <label class="label_check" for="carving_excellent">
+      <input name="carving_excellent" type="checkbox" id="carving_excellent" value="1">Excellent
+    </label>
+    <label class="label_check" for="carving_great">
+      <input name="carving_great" type="checkbox" id="carving_great" value="1">Great
+    </label>
+    <label class="label_check" for="carving_good">
+      <input name="carving_good" type="checkbox" id="carving_good" value="1">Good
+    </label>
+    <label class="label_check" for="carving_average">
+      <input name="carving_average" type="checkbox" id="carving_average" value="1">Average
+    </label>
+    <label class="label_check" for="carving_poor">
+      <input name="carving_poor" type="checkbox" id="carving_poor" value="1">Poor
+    </label>
+  </div>
+</fieldset>
+<fieldset id="switch-set" class="coolfieldset collapsed">
+  <h4 class="legend">
+    Switch</h4>
+  <div class="hideable" id="width" >
+    <label class="label_check" for="switch_excellent">
+      <input name="switch_excellent" type="checkbox" id="switch_excellent" value="1">Excellent
+    </label>
+    <label class="label_check" for="switch_great">
+      <input name="switch_great" type="checkbox" id="switch_great" value="1">Great
+    </label>
+    <label class="label_check" for="switch_good">
+      <input name="switch_good" type="checkbox" id="switch_good" value="1">Good
+    </label>
+    <label class="label_check" for="switch_average">
+      <input name="switch_average" type="checkbox" id="switch_average" value="1">Average
+    </label>
+    <label class="label_check" for="switch_poor">
+      <input name="switch_poor" type="checkbox" id="switch_poor" value="1">Poor
+    </label>
+  </div>
+</fieldset>
+<fieldset id="jibbing-set" class="coolfieldset collapsed">
+  <h4 class="legend">
+    Jibbing</h4>
+  <div class="hideable" id="width" >
+    <label class="label_check" for="jibbing_excellent">
+      <input name="jibbing_excellent" type="checkbox" id="jibbing_excellent" value="1">Excellent
+    </label>
+    <label class="label_check" for="jibbing_great">
+      <input name="jibbing_great" type="checkbox" id="jibbing_great" value="1">Great
+    </label>
+    <label class="label_check" for="jibbing_good">
+      <input name="jibbing_good" type="checkbox" id="jibbing_good" value="1">Good
+    </label>
+    <label class="label_check" for="jibbing_average">
+      <input name="jibbing_average" type="checkbox" id="jibbing_average" value="1">Average
+    </label>
+    <label class="label_check" for="jibbing_poor">
+      <input name="jibbing_poor" type="checkbox" id="jibbing_poor" value="1">Poor
+    </label>
+  </div>
+</fieldset>
+<fieldset id="pipe-set" class="coolfieldset collapsed">
+  <h4 class="legend">
+    Pipe</h4>
+  <div class="hideable" id="width" >
+    <label class="label_check" for="pipe_excellent">
+      <input name="pipe_excellent" type="checkbox" id="pipe_excellent" value="1">Excellent
+    </label>
+    <label class="label_check" for="pipe_great">
+      <input name="pipe_great" type="checkbox" id="pipe_great" value="1">Great
+    </label>
+    <label class="label_check" for="pipe_good">
+      <input name="pipe_good" type="checkbox" id="pipe_good" value="1">Good
+    </label>
+    <label class="label_check" for="pipe_average">
+      <input name="pipe_average" type="checkbox" id="pipe_average" value="1">Average
+    </label>
+    <label class="label_check" for="pipe_poor">
+      <input name="pipe_poor" type="checkbox" id="pipe_poor" value="1">Poor
+    </label>
+  </div>
+</fieldset>
+<fieldset id="jumps-set" class="coolfieldset collapsed">
+  <h4 class="legend">
+    Jumps</h4>
+  <div class="hideable" id="width" >
+    <label class="label_check" for="jumps_excellent">
+      <input name="jumps_excellent" type="checkbox" id="jumps_excellent" value="1">Excellent
+    </label>
+    <label class="label_check" for="jumps_great">
+      <input name="jumps_great" type="checkbox" id="jumps_great" value="1">Great
+    </label>
+    <label class="label_check" for="jumps_good">
+      <input name="jumps_good" type="checkbox" id="jumps_good" value="1">Good
+    </label>
+    <label class="label_check" for="jumps_average">
+      <input name="jumps_average" type="checkbox" id="jumps_average" value="1">Average
+    </label>
+    <label class="label_check" for="jumps_poor">
+      <input name="jumps_poor" type="checkbox" id="jumps_poor" value="1">Poor
+    </label>
+  </div>
+</fieldset>
+<input type="hidden" name="mens" id="mens" value="0">
+<input type="hidden" name="womens" id="womens" value="0">
+</div>
+</form>
+</div>
+
+<script>
+
+    // $("#discontinued-set").coolfieldset({collapsed:true});
+    $(document).ready(function () {
+        /*
+
+         $(".coolfieldset").coolfieldset();
+         $("#brand-set").coolfieldset({ collapsed: true });
+         $("#camber-set").coolfieldset({ collapsed: true });
+         $("#stance-set").coolfieldset({ collapsed: true });
+         $("#shape-set").coolfieldset({ collapsed: true });
+         $("#onsnowfeel-set").coolfieldset({ collapsed: true });
+         $("#powder-set").coolfieldset({ collapsed: true });
+         $("#turninitiation-set").coolfieldset({ collapsed: true });
+         $("#speed-set").coolfieldset({ collapsed: true });
+         $("#uneventerrain-set").coolfieldset({ collapsed: true });
+         $("#edgehold-set").coolfieldset({ collapsed: true });
+         $("#flex-set").coolfieldset({ collapsed: true });
+         $("#carving-set").coolfieldset({ collapsed: true });
+         $("#switch-set").coolfieldset({ collapsed: true });
+         $("#jibbing-set").coolfieldset({ collapsed: true });
+         $("#pipe-set").coolfieldset({ collapsed: true });
+         $("#jumps-set").coolfieldset({ collapsed: true });
+         */
+        $(".coolfieldset").each(function(){
+
+            $(this).find("h4").click(function(){
+                //debugger;
+                //alert($(this).attr("id"));
+                if($(this).parent().hasClass("collapsed"))
+                {
+                    $(this).parent().removeClass("collapsed");
+                }
+                else{
+                    $(this).parent().addClass("collapsed");
+                }
+
+
+            });
+        });
+    });
+</script>

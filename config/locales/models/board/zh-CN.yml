@@ -1,0 +1,33 @@
+zh-CN:
+  activerecord:
+    models:
+     board: '单板'
+    attributes:
+      board:
+        gender: '款式'
+        name: 名称
+        price: 单价
+        img_url: 图片地址
+        favorite: 推荐
+        ApproxWeight: 重量
+        RidingStyle: 风格
+        RidingLevel: 水平
+        AvailableWidths: 宽度
+        Manufacturedin: 制造商
+        Shape: 形状
+        CamberProfile: 弧度
+        Stance: 姿势
+        OnSnowFeel: 雪感
+        Powder: 发力
+        TurnInitiation: 转弯
+        Speed: 速度
+        UnevenTerrain: 复杂地形
+        EdgeHold: 立刃
+        Flex: 弹性
+        Carving: 卡刃
+        Switch: 换刃
+        Jibbing: 刹车
+        Pipe: U管道
+        Jumps: 跳跃
+
+

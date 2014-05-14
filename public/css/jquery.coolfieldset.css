@@ -1,0 +1,27 @@
+.coolfieldset,
+.coolfieldset.expanded { padding: 3px 8px; line-height: 25px; border: 1px solid #ddd; border-radius: 1px; background: #f7f7f7; margin-bottom: 11px; -webkit-box-shadow: 1px 1px #d1d3d3; box-shadow: 1px 1px #d1d3d3; }
+.coolfieldset.collapsed{ padding: 3px 8px; }
+.coolfieldset h4 { padding-left:13px; font-weight:bold; cursor:default; font-size: 12px; line-height: 25px; }
+.coolfieldset h4, 
+.coolfieldset.expanded h4 { cursor: pointer; padding-left: 12px; background: url(arrow_down.png) no-repeat 0; }
+.coolfieldset.collapsed h4 { cursor: pointer; padding-left: 12px; background: url(arrow_right.png) no-repeat 0; }
+.fold { overflow: hidden; height: 150px; }
+.all { height: auto !important; }
+#showAll { color: #08c; }
+.more { cursor: pointer; padding-left: 15px; background: url(filter-arrow-down.png) no-repeat 0; color: #08c; }
+.less { cursor: pointer; padding-left: 14px; background: url(filter-arrow-up.png) no-repeat 0 !important; color: #08c; }
+.more:hover,
+.less:hover { text-decoration: underline; }
+
+/*.reviewfold { overflow: hidden; max-height: 162px; }*/
+.reviewfold { overflow-x: hidden; max-height: 400px; }
+h2.title { font-size: 16px; }
+.reviewall { max-height: 650px !important; overflow: auto; }
+#showAllReview { color: #08c; font-weight: bold; }
+.reviewmore { cursor: pointer; padding-left: 15px; background: url(filter-arrow-down.png) no-repeat 0; color: #08c; }
+.reviewless { cursor: pointer; padding-left: 14px; background: url(filter-arrow-up.png) no-repeat 0 !important; color: #08c; }
+.reviewmore:hover,
+.reviewless:hover { text-decoration: underline; }
+
+.entry-content-asset iframe { width: 622px !important; height: 350px !important; }
+
